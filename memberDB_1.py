@@ -2,7 +2,7 @@
 import pymysql
 
 # dbConn = pymysql.connect(host='localhost', user='root', password='domybest2024@', db='shopdb')
-dbConn = pymysql.connect(user='root', password='domybest2024@', host='localhost', db='shopdb')
+dbConn = pymysql.connect(user='root', password='', host='localhost', db='shopdb')
 #보통은 위와 같이 계정(root)을 먼저 쓴다고. 그 다음에 패스워드 순으로.
 # 다음으로 메뉴를 만들어본다.
 
