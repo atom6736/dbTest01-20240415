@@ -51,19 +51,19 @@ while True:
         cur.close()
         dbConn.commit()
 
-    # elif menuNum == "3":
-    #     memberID = input("1) 탈퇴할 회원의 아이디를 입력하세요 :")
-    #     memberName = input("2) 탈퇴할 회원의 이름을 입력하세요 :")
+    elif menuNum == "3":
+        memberID = input("1) 탈퇴할 회원의 아이디를 입력하세요 :")
+    #     memberName = input("2) 탈퇴할 회원의 이름을 입력하세요 :") # 이 나머지는 불필요.
     #     address = input("3) 탈퇴할 회원주소를 입력하세요 :")
     #
-    #     sql = f"DELETE FROM membertbl WHERE memberID = '{memberID}'"
-    #     cur = dbConn.cursor()
-    #     result = cur.execute(sql)
-    #
-    #     if result == 1:  # int가 와야 하니까 문자열이 오면 안된다고. 그래서 1의 따음표를 지워줬다고.
-    #         print("축하합니다! 회원탈퇴에 성공하셨습니다.")
-    #     else:
-    #         print("회원탈퇴 실패입니다.")
+        sql = f"DELETE FROM membertbl WHERE memberID = '{memberID}'"
+        cur = dbConn.cursor()
+        result = cur.execute(sql)
+
+        if result == 1:
+            print("회원탈퇴에 성공하셨습니다.")
+        else:
+            print("회원탈퇴 실패입니다.")
     #
     #     cur.close()
     #     dbConn.commit()
